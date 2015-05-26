@@ -1,0 +1,22 @@
+{
+  "name": "swagger-to-typescript",
+  "version": "0.0.0",
+  "description": "Generate typescript definitions from a swagger definition.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vinaygunnam/swagger-to-typescript.git"
+  },
+  "author": "Vinay Gunnam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vinaygunnam/swagger-to-typescript/issues"
+  },
+  "homepage": "https://github.com/vinaygunnam/swagger-to-typescript",
+  "dependencies": {
+    "lodash": "^3.9.3"
+  }
+}
