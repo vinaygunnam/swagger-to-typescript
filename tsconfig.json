@@ -16,9 +16,11 @@
     ],
     "files": [
         "./index.ts",
+        "./lib/parsers/type.ts",
         "./models/ISwagger.ts",
+        "./models/swagger-formats.ts",
+        "./models/swagger-types.ts",
         "./typings/lodash/lodash.d.ts",
-        "./typings/node/node.d.ts",
-        "./typings/tsd.d.ts"
+        "./typings/node/node.d.ts"
     ]
 }
