@@ -28,6 +28,7 @@ node_modules
 
 # Compiled javascript and source maps
 **/*.js
+!gulpfile.js
 **/*.map
 
 # Typescript definitions
