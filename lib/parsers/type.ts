@@ -3,7 +3,7 @@ import SwaggerFormats = require('../../models/swagger-formats');
 import refParser = require('./ref');
 import cleanTypeName = require('../helpers/clean-type-name');
 
-export = function typeParser(schema: Schema): string {
+function typeParser(schema: Schema): string {
     if (schema) {
         if (schema.type) {
             switch (schema.type) {
@@ -23,7 +23,7 @@ export = function typeParser(schema: Schema): string {
                 case SwaggerTypes.Array:
                     return typeParser(schema.items) + '[]';
                 case SwaggerTypes.Object:
-                    
+
                 default:
                     return 'any';
             }
@@ -34,3 +34,5 @@ export = function typeParser(schema: Schema): string {
         }
     }
 }
+
+export = typeParser;

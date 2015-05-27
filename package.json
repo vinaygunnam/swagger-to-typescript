@@ -1,6 +1,6 @@
 {
   "name": "swagger-to-typescript",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Generate typescript definitions from a swagger definition.",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/vinaygunnam/swagger-to-typescript",
   "dependencies": {
-    "lodash": "^3.9.3"
+    "gulp": "^3.8.11",
+    "gulp-typescript": "^2.7.5"
   }
 }

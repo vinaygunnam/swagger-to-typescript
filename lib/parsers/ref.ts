@@ -6,7 +6,7 @@ function extractTypeNameFromRef(ref: string): string {
     return null;
 }
 
-export = function refParser(schema: Schema): string {
+function refParser(schema: Schema): string {
     if (!schema) return null;
 
     if (schema.$ref) {
@@ -15,3 +15,5 @@ export = function refParser(schema: Schema): string {
 
     return null;
 };
+
+export = refParser;
