@@ -11,12 +11,17 @@ This tool can be used to develop against a swagger schema using TypeScript.
 - Install node and npm
 - Install global dependencies
         > npm install -g gulp-cli tsd
+
 - Install the typescript definitions
         > tsd update
+
 - Install dependencies
         > npm install gulp gulp-typescript --save
+
 - Compile the typescript files
         > gulp
+
 - Run the tool against sample swagger schema in the "temp" folder
         > node index.js
+
 - Check the interface files generated in the "temp" folder
