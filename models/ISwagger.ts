@@ -48,7 +48,9 @@ interface Schema {
     required?: string[];
     properties?: {
         [name: string]: Object;
-    }
+    };
+    items?: Schema|Schema[];
+    additionalItems?: boolean|Schema;
 }
 
 interface SwaggerObject {

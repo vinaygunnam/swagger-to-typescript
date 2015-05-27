@@ -16,6 +16,7 @@
     ],
     "files": [
         "./index.ts",
+        "./lib/parsers/ref.ts",
         "./lib/parsers/type.ts",
         "./models/ISwagger.ts",
         "./models/swagger-formats.ts",

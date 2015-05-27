@@ -1,9 +1,9 @@
-var SwaggerTypes = {
-    Integer: "integer",
-    Number: "number",
-    Array: "array",
-    Boolean: "boolean",
-    String: "string"
+class SwaggerTypes {
+    static Integer = "integer";
+    static Number = "number";
+    static Array = "array";
+    static Boolean = "boolean";
+    static String = "string";
 };
 
 export = SwaggerTypes;

@@ -1,13 +1,14 @@
-var SwaggerTypes = require('../../models/swagger-types'),
-    SwaggerFormats = require('../../models/swagger-formats');
+import SwaggerTypes = require('../../models/swagger-types');
+import SwaggerFormats = require('../../models/swagger-formats');
+import refParser = require('./ref');
 
-export = (type: string, format: string): string => {
-    switch (type) {
+export = (schema: Schema): string => {
+    switch (schema.type) {
         case SwaggerTypes.Integer:
         case SwaggerTypes.Number:
             return "number";
         case SwaggerTypes.String:
-            switch (format) {
+            switch (schema.format) {
                 case SwaggerFormats.Date:
                 case SwaggerFormats.DateTime:
                     return "Date";
@@ -16,6 +17,8 @@ export = (type: string, format: string): string => {
             }
         case SwaggerTypes.Boolean:
             return "boolean";
+        case SwaggerTypes.Array:
+            return "I" + refParser(schema) + "[]";
         default:
             return "any";
     }
