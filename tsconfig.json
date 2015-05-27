@@ -16,12 +16,17 @@
     ],
     "files": [
         "./index.ts",
+        "./lib/helpers/clean-type-name.ts",
         "./lib/parsers/ref.ts",
         "./lib/parsers/type.ts",
+        "./lib/runners/interface-writer.ts",
         "./models/ISwagger.ts",
         "./models/swagger-formats.ts",
         "./models/swagger-types.ts",
+        "./temp/dummy.ts",
+        "./temp/pets.ts",
         "./typings/lodash/lodash.d.ts",
-        "./typings/node/node.d.ts"
+        "./typings/node/node.d.ts",
+        "./typings/tsd.d.ts"
     ]
 }
